@@ -13,6 +13,10 @@ ARG BUILD_VERSION
 # https://github.com/Athou/commafeed/releases
 ENV COMMAFEED_VERSION 2.5.0
 
+# Install Java
+RUN set -eux; \
+	apk add openjdk8 --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
+
 # Install CommaFeed
 RUN set -eux; \
 	mkdir -p /commafeed; \
