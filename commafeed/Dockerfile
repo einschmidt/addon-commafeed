@@ -15,7 +15,7 @@ ENV COMMAFEED_VERSION 2.5.0
 
 # Install Java
 RUN set -eux; \
-	apk add openjdk8 --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
+	apk add openjdk8=8.252.09-r0 --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
 
 # Install CommaFeed
 RUN set -eux; \
