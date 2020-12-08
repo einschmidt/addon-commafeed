@@ -39,7 +39,6 @@ jobs:
         uses: home-assistant/builder@master
         with:
           args: |
-            --test \
             --no-latest \
             --all \
             --target /data/commafeed \
