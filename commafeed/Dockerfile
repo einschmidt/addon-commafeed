@@ -13,11 +13,6 @@ ARG BUILD_VERSION
 # https://github.com/Athou/commafeed/releases
 ENV COMMAFEED_VERSION 2.5.0
 
-RUN set -eux; \
-	mkdir -p \
-		/commafeed \
-    ;
-
 # Install CommaFeed
 RUN set -eux; \
 	mkdir -p /commafeed; \
